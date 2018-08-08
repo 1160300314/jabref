@@ -32,7 +32,7 @@ public class NewEntryFromPlainTextAction extends SimpleCommand {
         }
 
         EntryTypeDialog typeChoiceDialog = new EntryTypeDialog(jabRefFrame);
-        typeChoiceDialog.setVisible(true);
+        typeChoiceDialog.showAndWait();
         EntryType selectedType = typeChoiceDialog.getChoice();
         if (selectedType == null) {
             return;

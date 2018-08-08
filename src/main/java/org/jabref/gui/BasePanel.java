@@ -801,7 +801,7 @@ public class BasePanel extends StackPane implements ClipboardOwner {
             // Find out what type is wanted.
             final EntryTypeDialog etd = new EntryTypeDialog(frame);
             // We want to center the dialog, to make it look nicer.
-            etd.setVisible(true);
+            etd.showAndWait();
             actualType = etd.getChoice();
         }
         if (actualType != null) { // Only if the dialog was not canceled.
